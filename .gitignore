@@ -1,0 +1,30 @@
+# Ambientes virtuais
+venv/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Arquivos de instâncias do Flask
+instance/
+
+# Arquivos de banco de dados temporários
+*.sqlite3
+
+# Arquivos de teste
+*.pytest_cache/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
