@@ -2,7 +2,7 @@
 
 Um projeto simples em Flask desenvolvido para estudar e praticar conceitos fundamentais de back-end com Python e banco de dados.  
 O objetivo é criar uma aplicação simples de gestão de clientes, mas com base sólida e arquitetura limpa, servindo de ponto de partida para evoluções futuras.
-O projeto é apenas para estudo e desenvolvimento pessoal, o projeto ainda está simples porémp pretendo melhorar cada vez mais, evoluando como programador.
+O projeto é apenas para estudo e desenvolvimento pessoal, o projeto ainda está simples porém pretendo melhorar cada vez mais, evoluindo como programador.
 
 ---
 
