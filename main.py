@@ -1,12 +1,11 @@
 from flask import Flask
-from routes.home import home_routes
-from routes.cliente import cliente_rout
+from configuracao import configure_all
 
-
+#Inicia o Flask
 app = Flask(__name__)
+ 
+configure_all(app) 
 
-app.register_blueprint(home_routes)
-app.register_blueprint(cliente_rout, url_prefix="/cliente")
-
+#iniciar o projeto
 if __name__ == "__main__":
     app.run(debug=True)

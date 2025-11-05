@@ -1,30 +1,45 @@
-# Ambientes virtuais
+# =============================
+# Arquivos e pastas de ambiente
+# =============================
 venv/
 .venv/
 
-# Cache do Python
+# =============================
+# Cache e compilação do Python
+# =============================
 __pycache__/
 *.py[cod]
+*.pyo
 
-# Logs
+# =============================
+# Logs e relatórios temporários
+# =============================
 *.log
+*.tmp
+*.bak
 
-# Arquivos de configuração de IDEs
+# =============================
+# Configurações de IDEs e editores
+# =============================
 .vscode/
 .idea/
 
-# Arquivos de instâncias do Flask
+# =============================
+# Arquivos do Flask
+# =============================
 instance/
-
-# Arquivos de banco de dados temporários
 *.sqlite3
+*.db
 
-# Arquivos de teste
+# =============================
+# Arquivos de teste e cobertura
+# =============================
 *.pytest_cache/
 .coverage
 htmlcov/
-.pytest_cache/
 
-# Sistema operacional
+# =============================
+# Arquivos de sistema operacional
+# =============================
 .DS_Store
 Thumbs.db
