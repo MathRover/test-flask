@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Gmail</th>
+      <th scope="col"></th>
+
+    </tr> 
+  </thead>
+  <tbody id="lista-cliente">
+
+    {% for cliente in clientes %}
+    
+      {% include 'item_cliente.html' %}
+
+    {% endfor %}
+  
+    </tbody>
+</table>

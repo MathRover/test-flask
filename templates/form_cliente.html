@@ -1,0 +1,37 @@
+<form class="c-form" 
+    {% if cliente %}
+        action="{{ url_for('cliente.update_cliente', client_id=cliente.id) }}"
+        c-swap="#cliente-{{ cliente.id }}"
+    {% else %}
+        action="{{ url_for('cliente.obeter_cliente') }}"
+        c-append="#lista-clientes"
+    {% endif %}
+    
+    method="post"
+
+    {% if cliente %}
+        c-swap=".cliente-{{cliente.id}}"
+
+    {% else %}
+        c-append="#lista-clientes"
+
+    {% endif %}
+
+    c-reload-container="true"
+
+>
+ 
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" name="nome" {% if cliente %} value="{{ cliente.nome }}" {% endif %}>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Gmail</label>
+        <input type="text" class="form-control" name="gmail" {% if cliente %} value="{{ cliente.gmail }}" {% endif %}>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        {% if cliente %} Salvar {% else %} Criar {% endif %}
+    </button>
+</form>
