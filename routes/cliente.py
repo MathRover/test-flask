@@ -48,7 +48,7 @@ def update_cliente(client_id):
     data = request.json
     
     cliente_editado= Cliente.get_by_id(client_id)
-    cliente_editado.nome = data['nome']
+    cliente_editado.nome = data['nome'] 
     cliente_editado.gmail = data ['gmail']
     cliente_editado.save()
 
@@ -61,5 +61,3 @@ def deletar_cliente(client_id):
     cliente_deletado= Cliente.get_by_id(client_id)
     cliente_deletado.delete_instance() 
     return {"Cliente deletado": "ok"}  
-
-

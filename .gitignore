@@ -23,3 +23,10 @@ htmlcov/
 Thumbs.db
 
 .env
+
+database.sql
+
+.vscode
+
+INSERT INTO cliente (id, nome, gmail, da.sql
+Railway MySQL.session.sql

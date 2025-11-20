@@ -1,4 +1,9 @@
-<form class="c-form" 
+<form class="c-form"
+    
+    method="post"    
+    c-append="#lista-cliente" 
+    c-append="edit-cliente"
+
     {% if cliente %}
         action="{{ url_for('cliente.update_cliente', client_id=cliente.id) }}"
         c-swap="#cliente-{{ cliente.id }}"
@@ -6,18 +11,15 @@
         action="{{ url_for('cliente.obeter_cliente') }}"
         c-append="#lista-clientes"
     {% endif %}
-    
-    method="post"
+
 
     {% if cliente %}
-        c-swap=".cliente-{{cliente.id}}"
+        c-swap="#cliente-{{cliente.id}}"
 
     {% else %}
         c-append="#lista-clientes"
 
     {% endif %}
-
-    c-reload-container="true"
 
 >
  
@@ -34,4 +36,5 @@
     <button type="submit" class="btn btn-primary">
         {% if cliente %} Salvar {% else %} Criar {% endif %}
     </button>
+
 </form>
